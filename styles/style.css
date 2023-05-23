@@ -17,6 +17,19 @@
 }
 ::selection{
     background-color: var(--main-color);
+    color: #fff;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--main-color-alt)
 }
 html{
     scroll-behavior: smooth;
