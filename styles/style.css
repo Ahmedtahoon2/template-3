@@ -1546,6 +1546,7 @@ footer .box .social li a {
     height: 50px;
     font-size: 20px;
     transition: var(--main-transition);
+    border-radius: 5px;
 }
 footer .box .social .facebook:hover {
     background-color: #1877f2;
@@ -1619,10 +1620,21 @@ footer .box .line .info {
 footer .box .line .info span {
     display: block;
 }
+footer .footer-gallery{
+    display: grid;
+    grid-template-columns: repeat(3 ,auto);
+    gap: 10px;
+    justify-content: center;
+}
 footer .footer-gallery img {
     width: 78px;
     border: 3px solid #fff;
     margin: 2px;
+}
+@media (min-width: 991px) {
+    footer .footer-gallery{
+        gap: 50px 10px;
+    }
 }
 footer .copyright {
     padding: 25px 0;
